@@ -22,19 +22,27 @@
         <!-- Main area start -->
         <main>
             <section
-                class="border w-[90%] md:container lg:container m-auto mt-10"
+                class="w-[90%] flex flex-col md:container lg:container m-auto mt-10"
             >
-                <button class="btn btn-success text-white font-bold">
+                <button
+                    onclick="loadData()"
+                    class="btn btn-success text-white font-bold"
+                >
                     Load User Data
                 </button>
 
                 <!-- Data container -->
                 <section
-                    class="border mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+                    id="data-container"
+                    class="mt-10 mb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
                 ></section>
                 <!-- Data container end -->
             </section>
         </main>
         <!-- Main area end -->
+
+        <!-- Js Linking -->
+        <script src="js/index.js"></script>
+        <!-- Js Linking end -->
     </body>
 </html>
